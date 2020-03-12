@@ -4,8 +4,8 @@ var SVG = Snap('#my-svg');
 var Paper = SVG.g();
 
 //이미지
-var girl = Paper.image('../img/girl.png', 0, 0, 145, 200).toDefs();
-var parchment = Paper.image('../img/parchment.png', 0, 0, 220, 280).toDefs();
+var girl = Paper.image('img/girl.png', 0, 0, 145, 200).toDefs();
+var parchment = Paper.image('img/parchment.png', 0, 0, 220, 280).toDefs();
 
 // SVG 외곽선
 Paper.rect(0, 0, 360, 640, 6).attr({
