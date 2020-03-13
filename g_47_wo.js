@@ -191,8 +191,7 @@ bottomArea.rect(100, 370, 222, 170, 5).attr({
 
 var t12 = bottomArea.text(127, 415, ['ヲ는 글자와 음만 남아', '있고, 현대어에서는 거의', '쓰이지 않습니다.']).attr({
   'font-size': 20,
-  'fill': 'black',
-  'cursor': 'pointer'
+  'fill': 'black'
 });
 t12.selectAll('tspan')[1].attr({
   x: 118,
