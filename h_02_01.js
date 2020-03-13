@@ -7,6 +7,7 @@
   var girl = Paper.image('img/girl.png', 0, 0, 145, 200).toDefs();
   var neko = Paper.image('img/neko.png', 0, 0, 110, 140).toDefs();
   var parchment = Paper.image('img/parchment.png', 0, 0, 220, 520).toDefs();
+  var song = Paper.image('img/song.png', 0, 0, 40, 40).toDefs();
 
   // SVG 외곽선
   Paper.rect(0, 0, 360, 640, 6).attr({
@@ -24,6 +25,14 @@
   girl.use().transform('t20, 70').appendTo(topArea);
   neko.use().transform('t95, 415, r-15').appendTo(topArea);
   parchment.use().transform('t130, 60').appendTo(topArea);
+  song.use().transform('t265, 525').click(playSong).appendTo(topArea).attr({
+    'cursor': 'pointer'
+  });
+
+  function playSong() {
+    var audSong = new Audio('aud/song.wav');
+    audSong.play();
+  }
 
   topArea.rect(170, 108, 140, 60, 10).attr({
     'fill': '#dcdcdc',
