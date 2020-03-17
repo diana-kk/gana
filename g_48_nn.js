@@ -17,11 +17,30 @@ Paper.rect(0, 0, 360, 640, 6).attr({
   'fill': 'none'
 });
 
+// 페이지 이동
+var topBox = Paper.g();
+
+topBox.path('M1 45 L359 45 L359 0 Q358 1 358 1 L1 1').attr({
+  'fill': '#ECECEC'
+});
+
+hidari.use().transform('t16, 11').click(handlerPre).appendTo(topBox).attr({
+  'cursor': 'pointer'
+});
+
+function handlerPre() {
+  location.replace('g_02_01.html');
+}
+
+migi.use().transform('t315, 10').click(handlerPre).appendTo(topBox).attr({
+  'cursor': 'pointer'
+});
+
 // 상단
 var topArea = Paper.g();
 
 // 행
-topArea.text(22, 57, 'ア').click(handler01).attr({
+topArea.text(22, 87, 'ア').click(handler01).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -31,7 +50,7 @@ function handler01() {
   location.replace('g_03_aa.html');
 }
 
-topArea.text(22, 107, 'カ').click(handler02).attr({
+topArea.text(22, 137, 'カ').click(handler02).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -41,7 +60,7 @@ function handler02() {
   location.replace('g_08_ka.html');
 }
 
-topArea.text(22, 157, 'サ').click(handler03).attr({
+topArea.text(22, 187, 'サ').click(handler03).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -51,7 +70,7 @@ function handler03() {
   location.replace('g_13_sa.html');
 }
 
-topArea.text(22, 207, 'タ').click(handler04).attr({
+topArea.text(22, 237, 'タ').click(handler04).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -61,7 +80,7 @@ function handler04() {
   location.replace('g_18_ta.html');
 }
 
-topArea.text(22, 257, 'ナ').click(handler05).attr({
+topArea.text(22, 287, 'ナ').click(handler05).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -71,7 +90,7 @@ function handler05() {
   location.replace('g_23_na.html');
 }
 
-topArea.text(22, 307, 'ハ').click(handler06).attr({
+topArea.text(22, 337, 'ハ').click(handler06).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -81,7 +100,7 @@ function handler06() {
   location.replace('g_28_ha.html');
 }
 
-topArea.text(22, 357, 'マ').click(handler07).attr({
+topArea.text(22, 387, 'マ').click(handler07).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -91,7 +110,7 @@ function handler07() {
   location.replace('g_33_ma.html');
 }
 
-topArea.text(22, 407, 'ヤ').click(handler08).attr({
+topArea.text(22, 437, 'ヤ').click(handler08).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -101,7 +120,7 @@ function handler08() {
   location.replace('g_38_ya.html');
 }
 
-topArea.text(22, 457, 'ラ').click(handler09).attr({
+topArea.text(22, 487, 'ラ').click(handler09).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -111,7 +130,7 @@ function handler09() {
   location.replace('g_41_ra.html');
 }
 
-topArea.text(22, 507, 'ワ').click(handler10).attr({
+topArea.text(22, 537, 'ワ').click(handler10).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -122,11 +141,11 @@ function handler10() {
 }
 
 // 행의 해당 문자
-topArea.circle(30, 550, 20).attr({
+topArea.circle(30, 580, 20).attr({
   'fill': '#ececec',
   'stroke-width': 2
 });
-topArea.text(22, 557, 'ン').click(hanlderLine).attr({
+topArea.text(22, 587, 'ン').click(hanlderLine).attr({
   'font-size': 20,
   'font-weight': 'bold',
   'cursor': 'pointer'
@@ -137,7 +156,7 @@ function hanlderLine() {
 }
 
 // 라인
-topArea.line(62, 30, 62, 570).attr({
+topArea.line(62, 60, 62, 600).attr({
   'stroke': 'gray',
   'stroke-dasharray': '10 5'
 });
@@ -146,25 +165,25 @@ topArea.line(62, 30, 62, 570).attr({
 var bottomArea = Paper.g();
 
 // 단의 해당 문자
-bottomArea.circle(211, 50, 20).attr({
+bottomArea.circle(211, 80, 20).attr({
   'fill': '#FCF5D4',
   'stroke': '#FFB2AF',
   'stroke-width': 3
 });
-bottomArea.text(203, 57, 'ン').attr({
+bottomArea.text(203, 87, 'ン').attr({
   'font-size': 20,
   'font-weight': 'bold'
 });
 
 // 학습 문자
-bottomArea.circle(211, 185, 80).click(playAud01).attr({
+bottomArea.circle(211, 215, 80).click(playAud01).attr({
   'stroke': '#FFB2AF',
   'stroke-width': 8,
   'fill': '#FCF5D4',
   'cursor': 'pointer'
 });
 
-bottomArea.text(171, 220, 'ン').click(playAud01).attr({
+bottomArea.text(171, 250, 'ン').click(playAud01).attr({
   'font-size': 100,
   'cursor': 'pointer'
 });
@@ -176,18 +195,18 @@ function playAud01() {
 
 // 단어
 for (var i = 0; i < 4; i++) {
-  bottomArea.rect(80 + (i % 2) * 140, 300 + Math.floor(i / 2) * 140, 125, 125, 5).attr({
+  bottomArea.rect(80 + (i % 2) * 140, 330 + Math.floor(i / 2) * 140, 125, 125, 5).attr({
     'stroke': '#FFB2AF',
     'stroke-width': 3,
     'fill': 'white'
   });
 }
 
-g_konnbini.use().transform('t105 312').click(playAud02).appendTo(bottomArea).attr({
+g_konnbini.use().transform('t105 342').click(playAud02).appendTo(bottomArea).attr({
   'cursor': 'pointer'
 });
 
-var t01 = bottomArea.text(88, 412, ['コ', 'ン', 'ビニ', '편의점']).click(playAud02).attr({
+var t01 = bottomArea.text(88, 442, ['コ', 'ン', 'ビニ', '편의점']).click(playAud02).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -201,7 +220,7 @@ t01.selectAll('tspan')[2].attr({
 });
 t01.selectAll('tspan')[3].attr({
   x: 158,
-  y: 410,
+  y: 440,
   'font-size': 15,
   'fill': 'black'
 });
@@ -211,11 +230,11 @@ function playAud02() {
   audio2.play();
 }
 
-g_pannda.use().transform('t255 312').click(playAud03).appendTo(bottomArea).attr({
+g_pannda.use().transform('t255 342').click(playAud03).appendTo(bottomArea).attr({
   'cursor': 'pointer'
 });
 
-var t02 = bottomArea.text(233, 412, ['パ', 'ン', 'ダ', '판다']).click(playAud03).attr({
+var t02 = bottomArea.text(233, 442, ['パ', 'ン', 'ダ', '판다']).click(playAud03).attr({
   'font-size': 23,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -229,7 +248,7 @@ t02.selectAll('tspan')[2].attr({
 });
 t02.selectAll('tspan')[3].attr({
   x: 300,
-  y: 411,
+  y: 441,
   'font-size': 16,
   'fill': 'black'
 });
@@ -239,11 +258,11 @@ function playAud03() {
   audio3.play();
 }
 
-g_innku.use().transform('t110 450').click(playAud04).appendTo(bottomArea).attr({
+g_innku.use().transform('t110 480').click(playAud04).appendTo(bottomArea).attr({
   'cursor': 'pointer'
 });
 
-var t03 = bottomArea.text(93, 552, ['イ', 'ン', 'ク', '잉크']).click(playAud04).attr({
+var t03 = bottomArea.text(93, 582, ['イ', 'ン', 'ク', '잉크']).click(playAud04).attr({
   'font-size': 23,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -257,7 +276,7 @@ t03.selectAll('tspan')[2].attr({
 });
 t03.selectAll('tspan')[3].attr({
   x: 161,
-  y: 550,
+  y: 580,
   'font-size': 16,
   'fill': 'black'
 });
@@ -267,11 +286,11 @@ function playAud04() {
   audio4.play();
 }
 
-g_penn.use().transform('t250 453').click(playAud05).appendTo(bottomArea).attr({
+g_penn.use().transform('t250 483').click(playAud05).appendTo(bottomArea).attr({
   'cursor': 'pointer'
 });
 
-var t04 = bottomArea.text(248, 552, ['ペ', 'ン', '펜']).click(playAud05).attr({
+var t04 = bottomArea.text(248, 582, ['ペ', 'ン', '펜']).click(playAud05).attr({
   'font-size': 23,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -282,7 +301,7 @@ t04.selectAll('tspan')[1].attr({
 });
 t04.selectAll('tspan')[2].attr({
   x: 300,
-  y: 551,
+  y: 581,
   'font-size': 16,
   'fill': 'black'
 });
@@ -290,26 +309,4 @@ t04.selectAll('tspan')[2].attr({
 function playAud05() {
   var audio5 = new Audio('aud/aud_g_48_penn.wav');
   audio5.play();
-}
-
-Paper.line(0, 592, 360, 592).attr({
-  'stroke': '#9ab9ff',
-  'stroke-width': 3
-});
-
-// 페이지 이동
-hidari.use().transform('t15, 602').click(handlerPre).appendTo(Paper).attr({
-  'cursor': 'pointer'
-});
-
-function handlerPre() {
-  location.replace('g_02_01.html');
-}
-
-migi.use().transform('t315, 603').click(handlerAft).appendTo(Paper).attr({
-  'cursor': 'pointer'
-});
-
-function handlerAft() {
-  location.replace('g_02_01.html');
 }
