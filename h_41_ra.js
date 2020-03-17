@@ -18,7 +18,7 @@ Paper.rect(0, 0, 360, 640, 6).attr({
 var topArea = Paper.g();
 
 // 행
-topArea.text(22, 97, 'あ').click(handler01).attr({
+topArea.text(22, 92, 'あ').click(handler01).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -28,7 +28,7 @@ function handler01() {
   location.replace('h_03_aa.html');
 }
 
-topArea.text(22, 147, 'か').click(handler02).attr({
+topArea.text(22, 142, 'か').click(handler02).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -38,7 +38,7 @@ function handler02() {
   location.replace('h_08_ka.html');
 }
 
-topArea.text(22, 197, 'さ').click(handler03).attr({
+topArea.text(22, 192, 'さ').click(handler03).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -48,7 +48,7 @@ function handler03() {
   location.replace('h_13_sa.html');
 }
 
-topArea.text(22, 247, 'た').click(handler04).attr({
+topArea.text(22, 242, 'た').click(handler04).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -58,7 +58,7 @@ function handler04() {
   location.replace('h_18_ta.html');
 }
 
-topArea.text(22, 297, 'な').click(handler05).attr({
+topArea.text(22, 292, 'な').click(handler05).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -68,7 +68,7 @@ function handler05() {
   location.replace('h_23_na.html');
 }
 
-topArea.text(22, 347, 'は').click(handler06).attr({
+topArea.text(22, 342, 'は').click(handler06).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -78,7 +78,7 @@ function handler06() {
   location.replace('h_28_ha.html');
 }
 
-topArea.text(22, 397, 'ま').click(handler07).attr({
+topArea.text(22, 392, 'ま').click(handler07).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -88,7 +88,7 @@ function handler07() {
   location.replace('h_33_ma.html');
 }
 
-topArea.text(22, 447, 'や').click(handler08).attr({
+topArea.text(22, 442, 'や').click(handler08).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -98,7 +98,7 @@ function handler08() {
   location.replace('h_38_ya.html');
 }
 
-topArea.text(22, 547, 'わ').click(handler09).attr({
+topArea.text(22, 542, 'わ').click(handler09).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -108,7 +108,7 @@ function handler09() {
   location.replace('h_46_wa.html');
 }
 
-topArea.text(22, 597, 'ん').click(handler10).attr({
+topArea.text(22, 592, 'ん').click(handler10).attr({
   'font-size': 20,
   'fill': 'gray',
   'cursor': 'pointer'
@@ -119,11 +119,11 @@ function handler10() {
 }
 
 // 행의 해당 문자
-topArea.circle(30, 490, 20).attr({
+topArea.circle(30, 485, 20).attr({
   'fill': '#ececec',
   'stroke-width': 2
 });
-topArea.text(22, 497, 'ら').click(hanlderLine).attr({
+topArea.text(22, 492, 'ら').click(hanlderLine).attr({
   'font-size': 20,
   'font-weight': 'bold',
   'cursor': 'pointer'
@@ -134,7 +134,7 @@ function hanlderLine() {
 }
 
 // 라인
-topArea.line(62, 70, 62, 610).attr({
+topArea.line(62, 65, 62, 605).attr({
   'stroke': 'gray',
   'stroke-dasharray': '10 5'
 });
@@ -145,35 +145,35 @@ var bottomArea = Paper.g();
 // 단
 var t11 = ['ら', 'り', 'る', 'れ', 'ろ'];
 for (var i = 0; i < t11.length; i++) {
-  bottomArea.circle(105 + (i * 53), 90, 20).attr({
+  bottomArea.circle(105 + (i * 53), 85, 20).attr({
     'fill': '#FCF5D4'
   });
-  bottomArea.text(97 + (i * 53), 97, t11[i]).attr({
+  bottomArea.text(97 + (i * 53), 92, t11[i]).attr({
     'font-size': 20,
     'fill': 'gray'
   });
 }
 
 // 단의 해당 문자
-bottomArea.circle(105, 90, 20).attr({
+bottomArea.circle(105, 85, 20).attr({
   'fill': '#FCF5D4',
   'stroke': '#A1D8C8',
   'stroke-width': 3
 });
-bottomArea.text(97, 97, 'ら').attr({
+bottomArea.text(97, 92, 'ら').attr({
   'font-size': 20,
   'font-weight': 'bold'
 });
 
 // 학습 문자
-bottomArea.circle(211, 245, 80).click(playAud01).attr({
+bottomArea.circle(211, 240, 80).click(playAud01).attr({
   'stroke': '#A1D8C8',
   'stroke-width': 8,
   'fill': '#FCF5D4',
   'cursor': 'pointer'
 });
 
-bottomArea.text(171, 280, 'ら').click(playAud01).attr({
+bottomArea.text(171, 275, 'ら').click(playAud01).attr({
   'font-size': 100,
   'cursor': 'pointer'
 });
@@ -184,7 +184,7 @@ function playAud01() {
 }
 
 // 단어
-bottomArea.rect(100, 410, 222, 170, 5).attr({
+bottomArea.rect(100, 405, 222, 170, 5).attr({
   'stroke': '#A1D8C8',
   'stroke-width': 3,
   'fill': 'white'
@@ -194,7 +194,7 @@ h_rakuda.use().transform('t130 430').click(playAud02).appendTo(bottomArea).attr(
   'cursor': 'pointer'
 });
 
-var t12 = bottomArea.text(180, 560, ['ら', 'くだ', '낙타']).click(playAud02).attr({
+var t12 = bottomArea.text(180, 555, ['ら', 'くだ', '낙타']).click(playAud02).attr({
   'font-size': 25,
   'cursor': 'pointer'
 });
